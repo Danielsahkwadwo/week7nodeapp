@@ -78,9 +78,9 @@ jobs:
                   }
                 },
                 "environment": [
-                    {"name": "AWS_REGION", "value": "eu-west-1"},
+                    {"name": "AWS_REGION", "value": "${{ env.AWS_ECS_REGION }}"},
                     {"name": "TABLE_NAME", "value": "MyWeek7Table"},
-                    {"name": "ENVIRONMENT": "week7dev"}
+                    {"name": "ENVIRONMENT" "value": "week7dev"}
                 ],
                 "secrets": [
                     {"name": "AWS_ACCESS_KEY_ID", "valueFrom": "arn:aws:ssm:eu-west-1:615299752577:parameter/access-key-id"},
