@@ -78,7 +78,7 @@ jobs:
                   }
                 },
                 "environment": [
-                    {"name": "AWS_REGION", "value": "${{ env.AWS_ECS_REGION }}"},
+                    {"name": "AWS_REGION", "value": "eu-west-1"},
                     {"name": "TABLE_NAME", "value": "MyWeek7Table"},
                     {"name": "ENVIRONMENT" "value": "week7dev"}
                 ],
